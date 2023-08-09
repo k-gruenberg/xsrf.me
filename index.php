@@ -43,7 +43,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="Content-Security-Policy" content="default-src 'none'; form-action 'self';" />
+		<meta http-equiv="Content-Security-Policy" content="script-src 'none'; form-action 'self';" />
 		<title>xsrf.me</title>
 		<style type="text/css">
 			table, th, td {
