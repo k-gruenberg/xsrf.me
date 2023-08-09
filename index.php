@@ -36,7 +36,7 @@
 	} elseif (isset($_POST["post_message_submit"]) && isset($_SESSION["login"]) && $_SESSION["login"] == "true") {
 		// Add posted message to DB:
 		$statement = $db->prepare("INSERT INTO messages(id, username, ip_addr, message, timestmp) VALUES ((SELECT MAX(id)+1 FROM messages), ?, ?, ?, CURRENT_TIMESTAMP)");
-		$statement->execute(array($_SESSION["username"], $_SERVER['REMOTE_ADDR'], substr(preg_replace("/[^a-zA-Z _-.,;]/i", "", $_POST["message"]), 0, 64));
+		$statement->execute(array($_SESSION["username"], $_SERVER['REMOTE_ADDR'], substr(preg_replace("/[^a-zA-Z _-.,;]/i", "", $_POST["message"]), 0, 64)));
 	}
 ?>
 <!DOCTYPE html>
