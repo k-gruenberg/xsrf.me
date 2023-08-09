@@ -90,7 +90,7 @@
 						<?php
 							if (isset($_SESSION["login"]) && $_SESSION["login"] === "true") {
 								echo "<form action=\"index.php\" method=\"POST\">
-									<label for=\"message\">Message: </label><input type=\"text\" id=\"message\" name=\"message\" /><br/>
+									<label for=\"message\">Message: </label><input type=\"text\" id=\"message\" name=\"message\" />
 									<input type=\"submit\" name=\"post_message_submit\" value=\"Post message\" />
 								</form>";
 							} else {
