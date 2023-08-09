@@ -115,7 +115,7 @@
 					</p>
 				</div>
 				<br/>
-				© 2023 Kendrick Grünberg
+				© 2023 Kendrick Grünberg | <a href="https://github.com/k-gruenberg/xsrf.me">View source code</a>
 			</div>
 		</div>
 	</body>
