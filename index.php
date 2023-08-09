@@ -65,8 +65,8 @@
 				<div style="border-style: solid; padding: 15px 15px;">
 					<?php
 						if (isset($_SESSION["login"]) && $_SESSION["login"] === "true") {
-							echo "<p>You are logged in as: " . htmlentities($_SESSION["username"]) . "</p>";
-							echo "<form action=\"index.php\" method=\"POST\"><input type=\"submit\" name=\"logout_submit\" value=\"Logout\" /></form>";
+							echo "<p>You are logged in as: " . htmlentities($_SESSION["username"]);
+							echo "<form action=\"index.php\" method=\"POST\"><input type=\"submit\" name=\"logout_submit\" value=\"Logout\" /></form></p>";
 						} else {
 							echo "<form action=\"index.php\" method=\"POST\">
 									<label for=\"uname\">Username: </label><input type=\"text\" id=\"uname\" name=\"uname\" /><br/>
